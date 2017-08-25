@@ -15,8 +15,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="#">Filip Maslovaric</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
+    <a class="navbar-brand text-light" href="https://filipmaslovaric.github.io">Filip Maslovaric</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -24,37 +25,87 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="https://filipmaslovaric.github.io">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-light" href="https://filipmaslovaric.github.io">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/FilipMaslovaric">GitHub</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Hire Me (Soon)</a>
+          <a class="nav-link disabled" href="" data-toggle="modal" data-target="#HireModal">Hire Me (Soon)</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
   <!-- End of Navbar -->
-
+  <!-- Modal -->
+  <div class="modal fade" id="HireModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Thank you for your interest!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>While I would love to do work with you, I am still at a very early stage of my foray into coding and not ready for showtime yet. This is just practice at the moment, and I am getting better each day. Please check back in the future!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Modal -->
   <div class="jumbotron jumbotron-fluid">
-    <div class="container-fluid">
+    <div class="container">
       <h1 class="display-3">My Portfolio</h1>
-      <img src="http://i.imgur.com/C7Hr2DI.jpg" width=25% height=25% alt="self portrait of Filip Maslovaric" class="img-fluid md-auto d-block">
+      <img class="img-fluid" src="http://i.imgur.com/C7Hr2DI.jpg" alt="self portrait of Filip Maslovaric">
       <p class="lead">Welcome to my personal portfolio page.</p>
       <p class="lead">It is currently under heavy construction.</p>
       <hr class="my-4">
-      <p>I am doing my part! </p>
       <p class="lead">
         <a class="btn btn-warning btn-lg" href="knowmore.html" role="button">WOULD YOU LIKE TO KNOW MORE?</a>
       </p>
     </div>
   </div>
   <!-- End of Jumbotron -->
+  <!-- Footer -->
+  <ul class="nav justify-content-end sticky-bottom">
+    <li class="nav-item">
+      <a class="nav-link" href="mailto:filip.maslovaric@gmail.com">E-mail</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.facebook.com/filip.maslovaric">Facebook</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://twitter.com/Filipmaslovaric">Twitter</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="" data-toggle="modal" data-target="#LinkModal">Brain-link</a>
+    </li>
+  </ul>
+  <!-- End of Footer -->
+  <!-- Modal -->
+  <div class="modal fade" id="LinkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Thank you for your interest!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>While I would love to do work with you, I am still at a very early stage of my foray into coding and not ready for showtime yet. This is just practice at the moment, and I am getting better each day. Please check back in the future!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Modal -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
